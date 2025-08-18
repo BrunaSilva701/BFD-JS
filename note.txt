@@ -1,0 +1,70 @@
+Atividade 1 – Informações Pessoais
+1. Crie variáveis para armazenar seu nome, idade e cor favorita. Em seguida, imprima cada uma dessas variáveis na tela, 
+2. com uma mensagem descritiva para cada uma (ex: "Nome: [seu nome]").
+
+Atividade 2 – Desafio
+1.  Peça ao usuário para digitar seu animal de estimação favorito.
+2.  Armazene a resposta em uma variável.
+3.  Imprima na tela uma mensagem que inclua a resposta do usuário (ex: "Seu animal de estimação favorito é um [animal]").
+4.  Adicione um comentário no seu código explicando o que ele faz.
+
+Atividade 3 – Tipos de Dados
+1.  Crie uma variável para armazenar uma string (ex: seu nome).
+2.  Crie uma variável para armazenar um número inteiro (ex: seu ano de nascimento).
+3.  Crie uma variável para armazenar um valor booleano (ex: `true` se você gosta de programar).
+4.  Imprima o valor e o tipo de cada variável no console.
+
+Atividade 4 – Concatenação de Strings
+1.  Crie duas variáveis, `parte1` e `parte2`, e atribua a elas partes de uma frase (ex: "Programar é " e "muito legal!").
+2.  Combine essas duas variáveis em uma nova variável chamada `fraseCompleta`.
+3.  Mostre a `fraseCompleta` no console.
+
+Atividade 5 – Desafio: Aritmética
+1.  Crie uma variável `base` e uma variável `altura` para um retângulo.
+2.  Calcule a área do retângulo (`area = base * altura`).
+3.  Calcule o perímetro do retângulo (`perimetro = 2 * (base + altura)`).
+4.  Imprima a área e o perímetro no console com mensagens descritivas.
+5.  Adicione um comentário ao seu código explicando a fórmula da área e do perímetro.
+
+Atividade 6 - Conversor de Temperatura
+1. Peça ao usuário uma temperatura em Celsius.
+2. Converta a temperatura para Fahrenheit usando a fórmula: $F = (C * 9/5) + 32$.
+3. Mostre o resultado no console.
+
+Atividade 7 - Cálculo do desconto
+1. Uma loja oferece 10% de desconto em qualquer produto. 
+2. Receba o valor total da compra e mostre o valor final com o desconto.
+
+Atividade 8 - Cálculo do salário líquido
+1. Escreva um programa que receba o salário bruto de um funcionário e calcule o salário líquido, considerando um desconto de 15% para impostos. 
+2. Em seguida, mostre o valor do desconto e o salário líquido final.
+
+Atividade 9 – Contagem regressiva
+1. Peça ao usuário um número N.
+2. Imprima todos os números de N até 1 usando `for`.
+
+Atividade 10 – Imprimindo caracteres
+1. Peça ao usuário uma palavra.
+2. Percorra a palavra e imprima cada caractere em uma linha separada usando `for`.
+
+Atividade 11 – Contando Vogais
+1. Peça ao usuário uma frase.
+2. Conte quantas vogais (a, e, i, o, u) existem na frase usando um loop `for`.
+3. Mostre o número total de vogais no console.
+
+Atividade 12 – Loop com condição de parada
+1. Peça ao usuário para digitar nomes de cidades até que ele digite a palavra "fim".
+2. Ao final, mostre quantos nomes de cidades foram digitados.
+
+Atividade 13 – Soma com condição de parada
+1. Peça ao usuário para digitar números.
+2. Quando a soma dos números digitados for maior que 100, o programa deve parar e mostrar a soma final.
+
+Atividade 14 – Contagem de pares e ímpares
+1. Peça ao usuário para digitar números. 
+2. O programa deve parar quando o usuário digitar o número 0.
+3. Ao final, mostre quantos números pares e quantos números ímpares foram digitados (sem contar o 0).
+
+Atividade 15 - Loop ou condição de parada
+1. Peça ao usuário para digitar números até que digite o número 0
+2. Ao  final, mostre quantos números foram digitados (sem contar o 0)
