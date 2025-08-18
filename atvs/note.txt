@@ -1,12 +1,11 @@
 Atividade 1 – Informações Pessoais
-1. Crie variáveis para armazenar seu nome, idade e cor favorita. Em seguida, imprima cada uma dessas variáveis na tela, 
-2. com uma mensagem descritiva para cada uma (ex: "Nome: [seu nome]").
+1. Crie variáveis para armazenar seu nome, idade e cor favorita. 
+2. Em seguida, imprima cada uma dessas variáveis na tela, com uma mensagem descritiva para cada uma (ex: "Nome: [seu nome]").
 
 Atividade 2 – Desafio
 1.  Peça ao usuário para digitar seu animal de estimação favorito.
 2.  Armazene a resposta em uma variável.
 3.  Imprima na tela uma mensagem que inclua a resposta do usuário (ex: "Seu animal de estimação favorito é um [animal]").
-4.  Adicione um comentário no seu código explicando o que ele faz.
 
 Atividade 3 – Tipos de Dados
 1.  Crie uma variável para armazenar uma string (ex: seu nome).
@@ -19,16 +18,15 @@ Atividade 4 – Concatenação de Strings
 2.  Combine essas duas variáveis em uma nova variável chamada `fraseCompleta`.
 3.  Mostre a `fraseCompleta` no console.
 
-Atividade 5 – Desafio: Aritmética
+Atividade 5 – Aritmética
 1.  Crie uma variável `base` e uma variável `altura` para um retângulo.
 2.  Calcule a área do retângulo (`area = base * altura`).
 3.  Calcule o perímetro do retângulo (`perimetro = 2 * (base + altura)`).
 4.  Imprima a área e o perímetro no console com mensagens descritivas.
-5.  Adicione um comentário ao seu código explicando a fórmula da área e do perímetro.
 
 Atividade 6 - Conversor de Temperatura
 1. Peça ao usuário uma temperatura em Celsius.
-2. Converta a temperatura para Fahrenheit usando a fórmula: $F = (C * 9/5) + 32$.
+2. Converta a temperatura para Fahrenheit usando a fórmula: F = (C * 9/5) + 32.
 3. Mostre o resultado no console.
 
 Atividade 7 - Cálculo do desconto
