@@ -65,4 +65,8 @@ Atividade 14 – Contagem de pares e ímpares
 
 Atividade 15 - Loop ou condição de parada
 1. Peça ao usuário para digitar números até que digite o número 0
-2. Ao  final, mostre quantos números foram digitados (sem contar o 0)
+2. Ao  final, mostre quantos números foram digitad1os (sem contar o 0)
+
+Atividade 16 - Nomes em ordem alfabetica
+1.Peça tres nomes ao usuario
+2.Os coloque em orddem alfabetiva
