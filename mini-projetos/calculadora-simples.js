@@ -21,7 +21,7 @@ do{
         break
     }
 
-    if (!['+', '-', '*', '%']) {
+    if (!['+', '-', '*', '/']) {
         console.log('Operação inválida. Tente novamente.');
         continue
     }
@@ -34,7 +34,7 @@ do{
         console.log(`O reultado da soma é: ${resultado.soma}`);
     } else if (tipo === '-'){
         console.log(`O reultado da subtração é: ${resultado.subtracao}`);
-    } else if (tipo = '*'){
+    } else if (tipo === '*'){
         console.log(`O reultado da multiplicação é: ${resultado.multiplicacao}`);
     } else if (tipo === '/'){
         if(resultado.divisao === null){
@@ -47,3 +47,5 @@ do{
 
 // break – Interrompe o laço completamente (sai do loop)
 // continue – Pula para a próxima iteração (volta para o inicio do loop)
+
+//PS: verificar se um valor está presente dentro de um array (ou string) no if com os tipos: includes, switch, comparação com if, set e has
