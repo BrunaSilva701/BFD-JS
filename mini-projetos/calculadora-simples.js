@@ -21,7 +21,7 @@ do{
         break
     }
 
-    if (!['+', '-', '*', '/']) {
+    if (!['+', '-', '*', '/'].includes(tipo)) {
         console.log('Operação inválida. Tente novamente.');
         continue
     }
