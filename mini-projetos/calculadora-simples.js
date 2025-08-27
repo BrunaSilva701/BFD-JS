@@ -8,26 +8,39 @@ function calcular(n1,n2){
         soma: n1+n2,
         subtracao: n1-n2,
         multiplicacao: n1*n2,
-        divisao: n2 !== 0 ? n1 / n2 : null, // evita divisão por zero
+        divisao: n2 !== 0 ? n1 / n2 : null, // evita divisão por zero (Se n2 for diferente de zero, faça n1 / n2. Caso contrário, retorne null, valor invalido.)
     }
 }
 
-let tipo; //Atribuição da váriavel "tipo"
+//Atribuição das variáveis
+let tipo;
+let soma;
+let subtracao;
+let divisao;
+let multiplicacao;
 
 do{
     //opções de operação
-    tipo = entrada ('Qual operação deseja realizar (soma: + ,subtração: - ,multiplicação: *  ou divisão: / ? ). Para sair, digite "Sair" ').toLowerCase();
+    console.log('\n'); //Quebra de linha
+    console.log('Escolha uma operação');
+    console.log('soma: +');
+    console.log('subtração: -');
+    console.log('multiplicação: *');
+    console.log('divisão: /');
+    console.log('Para encerrar, digite "Sair"'.toLowerCase());  // toLowerCase - reconhece a palavra independente da forma que foi escrita
+
+    tipo = entrada ('Digite a opção: ');
 
     //Encerra o programa
     if(tipo === 'sair'){
         console.log('Programa encerrado.');
-        break
+        break  // break – Interrompe o laço completamente (sai do loop)
     }
 
     //Avalia se a operação pode ser realizada
-    if (!['+', '-', '*', '%'].includes(tipo)) {
+    if (!['+', '-', '*', '/'].includes(tipo)) {   //includes - verifica se o valor/elemento está presente
         console.log('Operação inválida. Tente novamente.');
-        continue
+        continue  // continue – volta para o inicio do loop se a operação for invalida
     }
 
     //Valores que serão calculados
@@ -43,16 +56,10 @@ do{
     } else if (tipo === '*'){
         console.log(`O reultado da multiplicação é: ${resultado.multiplicacao}`);
     } else if (tipo === '/'){
-        if(resultado.divisao === null){ //Verifica se a divisão é permitida
+        if(resultado.divisao === null){  //Verifica se a divisão é permitida
             console.log('Divisão por 0 não é permitida');
         }else{
             console.log(`O resultado da divisão é: ${resultado.divisao}`);
         }
     }
 }while(true);  //continua por enquanto a condição for atendida
-
-// break – Interrompe o laço completamente (sai do loop)
-// continue – Pula para a próxima iteração (volta para o inicio do loop)
-// toLowerCase - reconhece independente da forma que foi escrita
-
-//PS: verificar se um valor está presente dentro de um array (ou string) no if com os tipos: includes, switch, comparação com if, set e has
