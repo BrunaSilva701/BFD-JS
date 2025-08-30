@@ -70,3 +70,31 @@ Atividade 15 - Loop ou condição de parada
 Atividade 16 - Nomes em ordem alfabetica
 1.Peça tres nomes ao usuario
 2.Os coloque em orddem alfabetiva
+
+Atividade 17 - Contagem de Votos Simples
+Imagine que você está construindo um sistema de votação para um concurso de talentos. Cada voto é registrado em um array de strings. 
+Você precisa contar quantos votos cada candidato recebeu.
+1. Crie uma função chamada contarVotos que recebe um array de strings. Cada string representa o nome de um candidato.
+2. Dentro da função, crie um objeto vazio para armazenar a contagem de votos.
+3. Percorra o array de votos. Para cada voto, verifique se o candidato já existe como uma chave no seu objeto de contagem.
+4. Se o candidato já existir, adicione 1 ao valor correspondente.
+5. Se o candidato não existir, crie a chave e defina o valor como 1.
+6. A função deve retornar o objeto de contagem de votos.
+
+Atividade 18 - Votação por Array de Pontos
+1. Crie uma função chamada calcularPontos que recebe um array de objetos. Cada objeto tem duas propriedades: candidato (string) e pontos (número).
+2. Crie um objeto vazio para acumular a pontuação total de cada candidato.
+3. Percorra o array de votos. Para cada objeto de voto:
+   a. Acesse o nome do candidato e a quantidade de pontos.
+   b. Se o candidato já estiver no seu objeto de pontuação, some os pontos atuais aos pontos existentes.
+   c. Se o candidato não estiver, crie-o com a pontuação inicial.
+4. A função deve retornar o objeto com a pontuação total de cada candidato.
+
+Atividade 19 - Votação com Múltiplas Rodadas
+Considere um cenário de votação com múltiplas rodadas. O objetivo é somar os votos de cada candidato em diferentes arrays de votação.
+1. Crie uma função chamada somarRodadas que aceita um número variável de arrays de votos como argumentos (usando o ... para "rest parameters"). Cada array de voto é semelhante ao do Problema 1.
+2. Crie um objeto para a contagem total de votos.
+3. Use um loop para percorrer cada array de votos passado como argumento.
+4. Dentro deste loop, use outro loop para percorrer os votos de cada array.
+5. Para cada voto, some 1 ao total do candidato no seu objeto de contagem.
+6. A função deve retornar o objeto com a soma total de votos de todas as rodadas.

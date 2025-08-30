@@ -1,0 +1,12 @@
+1) Evita divisão por zero
+n2 !== 0 ? n1 / n2 : null,  (Se n2 for diferente de zero, faça n1 / n2. Caso contrário, retorne null, valor invalido.)
+
+if(resultado.divisao === null){  
+    console.log('Divisão por 0 não é permitida');
+}
+
+2) Avalia se a operação pode ser realizada
+if (!['+', '-', '*', '/'].includes(tipo)) {   //includes - verifica se o valor/elemento está presente
+    console.log('Operação inválida. Tente novamente.');
+    continue  // continue – volta para o inicio do loop se a operação for invalida
+}

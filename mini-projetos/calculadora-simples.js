@@ -8,16 +8,12 @@ function calcular(n1,n2){
         soma: n1+n2,
         subtracao: n1-n2,
         multiplicacao: n1*n2,
-        divisao: n2 !== 0 ? n1 / n2 : null, // evita divisão por zero (Se n2 for diferente de zero, faça n1 / n2. Caso contrário, retorne null, valor invalido.)
+        divisao:  n1 / n2
     }
 }
 
 //Atribuição das variáveis
 let tipo;
-let soma;
-let subtracao;
-let divisao;
-let multiplicacao;
 
 do{
     //opções de operação
@@ -29,18 +25,12 @@ do{
     console.log('divisão: /');
     console.log('Para encerrar, digite "Sair"'.toLowerCase());  // toLowerCase - reconhece a palavra independente da forma que foi escrita
 
-    tipo = entrada ('Digite a opção: ');
+    tipo = entrada ('Digite a opção de operação: ');
 
     //Encerra o programa
     if(tipo === 'sair'){
         console.log('Programa encerrado.');
         break  // break – Interrompe o laço completamente (sai do loop)
-    }
-
-    //Avalia se a operação pode ser realizada
-    if (!['+', '-', '*', '/'].includes(tipo)) {   //includes - verifica se o valor/elemento está presente
-        console.log('Operação inválida. Tente novamente.');
-        continue  // continue – volta para o inicio do loop se a operação for invalida
     }
 
     //Valores que serão calculados
@@ -56,10 +46,6 @@ do{
     } else if (tipo === '*'){
         console.log(`O reultado da multiplicação é: ${resultado.multiplicacao}`);
     } else if (tipo === '/'){
-        if(resultado.divisao === null){  //Verifica se a divisão é permitida
-            console.log('Divisão por 0 não é permitida');
-        }else{
-            console.log(`O resultado da divisão é: ${resultado.divisao}`);
-        }
+        console.log(`O resultado da divisão é: ${resultado.divisao}`);
     }
 }while(true);  //continua por enquanto a condição for atendida
