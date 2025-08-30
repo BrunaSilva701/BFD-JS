@@ -2,54 +2,52 @@
 
 const entrada = require("prompt-sync")({ sigint: false });
 
+//Declaração de variáveis
 let totalDeVotos = 5;
-let cardeais = [];
-let votos = []; //array vazio
+let cardeais = []; //array para armazenar os nomes
+let votos = []; //array para armazenar votos
 let escolha;
-let vencedor = 0;
+let vencedor = 0; //variável para guardar o vencedore
 
+//Recebe candidatos
 console.log("---- Incrição dos Cardeais ---");
 for (let i = 0; i < totalDeVotos; i++) {
   let nomeCardeal = entrada(`Digite o nome do ${i + 1}° Cardeal: `);
-  cardeais.push({ id: i + 1, nome: nomeCardeal }); //guarda cardeais no array
-  votos.push(0) //guarda votos no array
+  cardeais.push({ id: i + 1, nome: nomeCardeal }); //guarda cardeais no array com ID e nome (cardeal.nome / cardeal.id. EX cardeal[0].id=1 / cardea.[0].nome='João')
+  votos.push(0)  //guarda votos no array
 }
 
 do{
-    for(let i = 0; i < votos.length; i++){
-        votos[i]=0;
-    }
+  //Zera os votos antes de cada nova votação
+  for(let i = 0; i < votos.length; i++){
+    votos[i]=0; //Defini o valor de i como 0 no inicio da votação (valor muda ao ser acumulado no i++)
+  }
 
   console.log("\n--- Inicio da votação ---");
   console.log(`Os cardeais que podem ser votados são: `);
-  for (let i = 0; i < cardeais.length; i++) { //Percorrer o array
+
+  //Percorrer o array mostrando os 5 cardeais cadastrado
+  for (let i = 0; i < cardeais.length; i++) { 
     console.log(`ID: ${cardeais[i].id} - Nome: ${cardeais[i].nome}`);
   }
 
+  //Recebe os votos
   for (let i = 0; i < totalDeVotos; i++) {
     escolha = entrada(`Digite o número do seu voto: `);
-    escolha = Number(escolha)
-    votos[escolha -1] = votos[escolha-1]+1; //Acessa o item correto no array votos e soma 1 ao número de votos daquele cardeal
+    escolha = Number(escolha) //Transforma de string para número
+    votos[escolha -1] = votos[escolha-1]+1; //Acessa o item correto no array "votos" e soma 1 ao número de votos daquele cardeal
   }
 
+  //Verifica e algum cardedal recebeu 60% ou mais dos votos
   for(let i =0; i < votos.length; i++){
-    if(votos[i] >= 3){
+    if(votos[i] >= totalDeVotos*0.6){
      console.log("\nO vencedor foi " + cardeais[i].nome + " com " + votos[i] + " votos!");
-     vencedor = 1;
+     vencedor = 1; //Defini que houve um vencedor para encerrar o laço
     }
   }
     
-    if(vencedor === 0){
+  //Reinicia a votação se ningúem alcançou 60% ou mais votos
+  if(vencedor === 0){
     console.log("Quantidade de votos não foi atingida. A votação será reiniciada!");
-    }
+  }
 }while (vencedor === 0) 
-
-// Utilizar:
-// Vetores - array OK
-// laço de repetição
-// contador
-// acumulador
-// estrutura de decisão
-// estrada e saida de dados
-// menu
-// logica condicional (2/3 votos = 0,6 ou 60%)
