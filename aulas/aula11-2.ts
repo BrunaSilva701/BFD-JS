@@ -19,5 +19,5 @@ class Endereco{
 const endreco1 = new Endereco ('das Flores', 10, 'Jaguaraga');
 const endreco2 = new Endereco ('Tupinambas', 15, 'São Luis');
 
-console.log(endreco1.formatar());
-console.log(endreco2.formatar());
+endreco1.formatar();
+endreco2.formatar();
