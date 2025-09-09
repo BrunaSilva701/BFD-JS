@@ -98,3 +98,26 @@ Considere um cenário de votação com múltiplas rodadas. O objetivo é somar o
 4. Dentro deste loop, use outro loop para percorrer os votos de cada array.
 5. Para cada voto, some 1 ao total do candidato no seu objeto de contagem.
 6. A função deve retornar o objeto com a soma total de votos de todas as rodadas.
+
+Atividade 20: Classe `Produto`
+1.  Crie uma classe chamada **`Produto`** com os atributos **`nome`** e **`preco`**.
+2.  No construtor, receba esses valores e atribua-os usando **`this`**.
+3.  Crie um método chamado **`exibirDetalhes()`** que imprime a seguinte frase: "O produto NOME custa R$ PRECO.".
+4.  Crie duas instâncias com **`new`** e chame o método **`exibirDetalhes()`** para cada uma.
+5.  **Dica**: Anote nos comentários do código onde aparecem `new`, `constructor` e `this`, explicando o papel de cada um.
+
+Atividade 21: Classes `Livro` e `Biblioteca`
+1.  Crie a classe **`Livro`** com os atributos **`titulo`** (string) e **`autor`** (string).
+2.  Crie a classe **`Biblioteca`**. No seu construtor, inicie um array **`livros`** vazio.
+3.  Crie um método **`adicionarLivro(livro)`** na classe **`Biblioteca`** que recebe uma instância de `Livro` e a adiciona ao array `livros`.
+4.  Crie um método **`listarLivros()`** que imprime o título e o autor de cada livro no array.
+5.  Crie uma instância de `Biblioteca`. Depois, crie duas instâncias de `Livro` e adicione-as à biblioteca. Por fim, chame o método `listarLivros()` para ver o resultado.
+6.  **Dica**: Explique com comentários cada uso de **`this`** e a função de **`new`** ao criar as instâncias.
+
+Atividade Prática 22: Classe `ContaBancaria`
+1.  Crie uma classe chamada **`ContaBancaria`** com os atributos **`saldo`** (number) e **`numeroConta`** (string).
+2.  No construtor, receba apenas o **`numeroConta`** e inicie o **`saldo`** com o valor **`0`**.
+3.  Crie o método **`depositar(valor)`** que adiciona o valor ao saldo.
+4.  Crie o método **`sacar(valor)`** que subtrai o valor do saldo, mas somente se houver saldo suficiente.
+5.  Crie um método **`consultarSaldo()`** que imprime o saldo atual.
+6.  Crie uma instância de `ContaBancaria` com `new`. Faça um depósito, depois um saque e, por fim, consulte o saldo para verificar o resultado.
