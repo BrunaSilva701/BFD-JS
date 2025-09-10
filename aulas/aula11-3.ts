@@ -19,9 +19,9 @@ class Pedido{
 }
 
 //Criação das IDs
-const pedido1 = new Pedido ('2');
-const pedido2 = new Pedido ('4');
-const pedido3 = new Pedido ('6');
+const pedido1 = new Pedido ('1');
+const pedido2 = new Pedido ('2');
+const pedido3 = new Pedido ('3');
 
 //Adicionar valores
 pedido1.adicionarValor(30);
