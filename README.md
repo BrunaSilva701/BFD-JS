@@ -1,2 +1,2 @@
 # BFD-JS
-Códigos desenvolvidos para estudo de JavaScript no Bolsa Futuro Digital
+Códigos desenvolvidos em aulas do Bolsa Futuro Digital
