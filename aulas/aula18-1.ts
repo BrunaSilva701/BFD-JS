@@ -3,7 +3,7 @@ class CadatroUsuario{
         if(senha.length <6){
             throw new Error ('Senha curta. A senha deve ter mais de 6 caracteres');
         }
-        console.log('usuario ${nome} registrado com sucesso!');
+        console.log('usuario ${this.nome} registrado com sucesso!');
     }
 }
 
