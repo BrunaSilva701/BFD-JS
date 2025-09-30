@@ -26,7 +26,7 @@ do{
   console.log("\n--- Inicio da votação ---");
   console.log(`Os cardeais que podem ser votados são: `);
 
-  //Percorrer o array mostrando os 5 cardeais cadastrado
+  //Percorrer o array mostrando os 5 cardeais cadastrado(menu)
   for (let i = 0; i < cardeais.length; i++) { 
     console.log(`ID: ${cardeais[i].id} - Nome: ${cardeais[i].nome}`);
   }
