@@ -1,13 +1,12 @@
-//Função para calcular media
+//Calculadora simples
 
 const entrada = require ('prompt-sync')({sigint:false});
 
-function media(m1, m2, m3){
-    return (m1+m2+m2)/3
+function soma(num1, num2){
+    return num1 + num2;
 }
 
-let m1 =    Number(entrada('Informe a primeira nota: '))
-let m2 = Number(entrada('Informe a segunda nota: '))
-let m3 = Number(entrada('Informe a terceira nota: '))
-let resultado = media(m1,m2,m3)
-console.log(`A média é: ${resultado}`)
+let num1 = Number(entrada('Digite o primeiro valor: '));
+let num2 = Number(entrada('Digite o segundo valor: '));
+let resultado = soma(num1, num2)
+console.log(`O resultado é: ${resultado}`)

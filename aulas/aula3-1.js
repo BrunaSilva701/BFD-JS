@@ -1,4 +1,3 @@
-//aula3-1
 const entrada = require ('prompt-sync')({sigint:false});
 
 let senha;

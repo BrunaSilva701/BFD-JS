@@ -1,4 +1,4 @@
-const entrada = require('prompt-sync') ({sigint:false}); //interrompe uma linha (true: interrompe o código todo)
-
-let nome = entrada ('Digite seu nome: ');
-console.log(nome);
+//Guardando dados
+let cidade='Olinda'; //Cria uma variavel
+let ano = 2025;
+console.log(`A cidade é ${cidade}e o ano é ${ano}`);

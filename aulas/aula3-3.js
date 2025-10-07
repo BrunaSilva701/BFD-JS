@@ -1,9 +1,15 @@
-//Tabuada de um número
+//Calculo do rateio
 
-const entrada = require ('prompt-sync')({sigint:false});
+const entrada = require('prompt-sync') ({sigint:false});
 
-let num = entrada ('Digite um número: ');
-for (let i =1; i <= 10; i++){
-    let resultado = num * i
-    console.log('A tabuada é: ' + resultado);
-}
+let agua = entrada('Qual o valor da conta de água? ');
+let energia = entrada('Qual o valor da conta de energia? ');
+let apartamento = entrada('Qual a quantidade de apartamentos? ');
+
+agua = Number(agua);
+energia = Number(energia);
+apartamento = Number(apartamento);
+
+let rateio = (agua + energia)/apartamento
+
+console.log(`Cada morador irá pagar: ${rateio}`);

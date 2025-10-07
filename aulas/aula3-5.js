@@ -1,13 +1,12 @@
-//Loop com condição de parada
+//Voto
 
-const entrada = require ('prompt-sync')({sigint:false});
+const entrada = require('prompt-sync') ({sigint:false});
 
-let num;
+let idade= entrada(console.log('Digite sua idade'));
+idade= Number(idade);
 
-while (num ==0){
-    num =  entrada ('Digite o número 0: ')
-    num = Number(num)
-} if (num != 0){
-    console.log('Número incorreto')
-    num = num+1
+if (idade >=16){
+    console.log('Você pode votar!!');
+}else{
+    console.log('Você não pode votar');
 }
