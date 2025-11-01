@@ -6,5 +6,5 @@ Códigos desenvolvidos em aulas do Bolsa Futuro Digital
 
 | Linguagem   | Percentual |
 |-------------|------------|
-| JavaScript  | ███████ 38.0% |
-| TypeScript  | ██████████ 62.0% |
+| JavaScript  | ███████ 33.3% |
+| TypeScript  | █████████████ 66.7% |
