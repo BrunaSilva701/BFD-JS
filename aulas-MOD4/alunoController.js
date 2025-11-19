@@ -27,7 +27,7 @@ function criar(req, res){
     const {nome, curso} = req.body;
 
     const novo = {
-        id:alunos.lenght + 1,
+        id:alunos.length + 1,
         nome,
         curso
     };
@@ -59,5 +59,6 @@ function excluir(req, res){
 
     res.json({mensagem:"Aluno removido com sucesso"});
 }
+
 
 module.exports = {listar, buscarPorId, criar, atualizar, excluir};
